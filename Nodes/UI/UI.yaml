@@ -129,6 +129,640 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+- Name: WebPresentationEngine2
+  Id: g=3ca2b7b0dcfb6f9d97da4813babf47f2
+  Type: ns=9;PresentationEngine
+  Children:
+  - Name: Protocol
+    Id: g=3d7d77872d87e1e68d170a1a6ed06e39
+    Type: BaseDataVariableType
+    DataType: Protocol
+    Value: 1
+  - Name: IPAddress
+    Id: g=0428b919165bd17b8332109aef80f33c
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0.0.0.0"
+  - Name: Port
+    Id: g=f28dfafebf6302463f08f75e9843eda9
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: StartWindow
+    Id: g=28c18452a2a117775bb0ed4bfc80f23d
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"47ba93e800f4854caca4e37ecf1acceb","Namespace":7}
+    Children:
+    - Name: Kind
+      Id: g=b31887eb2ab0b6742eb9f85392f30f64
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":12,"Namespace":3}
+  - Name: StyleSheet
+    Id: g=ed95a99460f89932abec96e0ac3c15f5
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"c8508090fb3fc94633892ef0efc8d9e0","Namespace":7}
+    Children:
+    - Name: Kind
+      Id: g=7d8aa4755f1da39e5bb1be905db74da1
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":447,"Namespace":3}
+  - Name: StartingUser
+    Id: g=869d4ccfba9cf119f8e51a931ebe897f
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"Id":46,"Namespace":1}
+    Children:
+    - Name: Kind
+      Id: g=8a599ed4d568a5dbe45e6f92061be42b
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":14,"Namespace":1}
+  - Name: Sessions
+    Id: g=37e01fb36458a0ca8fe4b11371fce99d
+    Type: BaseObjectType
+    Children:
+    - Name: Session1
+      Id: g=aabc16e50ab4ea165062c3c666766d13
+      Type: UISession
+      Children:
+      - Name: IsInteractive
+        Id: g=5f7f647775498007f29c2ecc722248b0
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: true
+      - Name: IsNative
+        Id: g=cf1b6c7d15fb49134a54e088b17d87e2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+      - Name: IsWeb
+        Id: g=97ae91fe49221acee4a649aa4dde1f04
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+      - Name: User
+        Id: g=2f46152038b4900d0f72b2b1025b9834
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Id: g=59286756b7f1488fd43d9a8338e212d9
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":14,"Namespace":1}
+      - Name: ActualLocaleIds
+        Id: g=56715e1bd62591d45b7f149a65872459
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: []
+      - Name: ActualLanguages
+        Id: g=236cc8f1323b6e7ebd13a75857c78861
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: []
+      - Name: ActualMeasurementSystem
+        Id: g=e4fccf1aad97f33d5b100d330c686d59
+        Type: BaseVariableType
+        DataType: MeasurementSystem
+        ReferenceType: HasProperty
+        Value: 0
+      - Name: TimeZoneOffset
+        Id: g=7f2f2cd42f0b7551e70582dc2fd24a92
+        Type: BaseVariableType
+        DataType: TimeZoneDataType
+        ReferenceType: HasProperty
+        AccessLevel: Read
+        Value: {"TypeId":{"Id":8912},"Body":{"offset":0,"daylightSavingInOffset":false}}
+      - Name: MeasurementUnits
+        Id: g=916cb936a4f3dd1faa60728d92f42ad3
+        Type: BaseObjectType
+        Children:
+        - Name: Length
+          Id: g=d00c11d9713c77f61005e2c984c284bc
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=6a90badbd2f114d0105db13118f4ba2e
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=899326ba6e10220cd3577443bc99f91b
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=eab389835e05959eebccf0f3032bfdb0
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Mass
+          Id: g=5951c55f53c106cf8e727859ec760b31
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=74abc419cbf1034737af1620df2c351a
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=c40ae435a528e2f22713a2310d3040d4
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=3596b776078b43072652c1eb031578b8
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Temperature
+          Id: g=00c8e15b0e3ee1ee483fc1cd82d5a9c6
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=c4a9dccde5a0ab24aab2ffbe814d7e47
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=4418cf88da024546e9c8a1e85296909d
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=1985c714d546991e4fde4af4185b967e
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: TimeSpan
+          Id: g=39bb003681cc0741066f7681fcc8831e
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=5d1ad997ef8efdfbc28c46f5f870070a
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=e92f3a3801c6ab382bb90633da6c5c9c
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=e3f525ef3aa50f7e3293cebcacf6eacb
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Area
+          Id: g=0d6ce7fc5204ac7fc0ff48e2652c2326
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=ed46b30a79e9124befd7f919084b41b7
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=2ae1c4aa6984906e8f25cea4cfeca159
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=ef0e7f6a790c51ba24c5f2c17edde96a
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Volume
+          Id: g=82ff87ca6e1ef5e90c11ffb469c8259f
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=5d9648378138cfc0c5538cd7f20c63cd
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=4938c5a40422ada309d2bf84a8822ee0
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=a4b147cca4ac8ba247570b5984335947
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: ElectricalCurrentIntensity
+          Id: g=7d92f155cff34c1b1d2eace2d5f63072
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=0c9b842d860904db5fb85cfe79f871e7
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=25b2c86ef23011e12a8e51f5c7fb27aa
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=c31df3f949014ae248945a95c13d2792
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Frequency
+          Id: g=c0b434497eed3ea2140f743f59f86c89
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=3f96054c4675693713e9d7a873229ffb
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=2da3601c189caf7b9a837f82d13bb1d8
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=d840233105c2053fecbce8d6d3735b80
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Force
+          Id: g=3aae8e48fd4730944f81e6716ee1418b
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=10c6a13bad6ecd6ffd72f13ddae5e120
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=927cb055db32e5ed697a02cc0d15a463
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=6eaa46a9b7290cafd9efccdcf652fa22
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Pressure
+          Id: g=01118691bedf67eae8ff518bb45186ce
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=453ac4958cc87ef228ccac424ddd2fa9
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=eb26c4d3a7412a5797e060144a09d3f8
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=673c58dd3d4aa76e081fe6bdb458ff54
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Density
+          Id: g=3de3614395beb634207eaa82774b3743
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=c51baaddfcdf7c77a9c9759acf825c3d
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=d5286c85589e8e283f50d4b346c49285
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=056e16ea4b711b3d7b2ed30224b40a17
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Speed
+          Id: g=1c76a99b08a0359319d94411432532d1
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=56c1175997d795214a6efd8e67f7ad82
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=8a5b3ae4ba5fadb4b11a854f6232aee6
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=46d1c58c54ba7ba4e2a5d911c2d12671
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Acceleration
+          Id: g=8fc8abb278c2769c10645aaac9771cb4
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=d1ac46766c4ca6eaa3e97a5103542c90
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=590f7d833ca6d92cebb66487c6e43a62
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=4b792e0756429470ccbf52b130ae5c7f
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Power
+          Id: g=3347b0970e3d453572f9dc8543c6c925
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=7863c7d544ab325206d5346c1424bab0
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=7b0004cf9799ab4860948aa928b3013a
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=80a63ee6a2780b62f291f1985ea25da2
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Energy
+          Id: g=57e49d8b5a3e9ca6aedb4cf916b2e917
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=01a689cf18e7a71ff92a4d7297ab7405
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=4b71920833fce0f8e229c256cfe74104
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=7dad032fcc95544adf6e351fbf37a1cb
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: ElectricPotential
+          Id: g=6a0d685b958986276627882b25a2bdfa
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=2fad3b2d0c67241492ba5ca1af8c09f6
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=8ab0e73a9aca065c82ca8029e14228a8
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=088e8d18fce1e5b2c53bd74e907afefa
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Torque
+          Id: g=c67d0cf5801b3222e782168690028bc1
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=225b2409f3066b9b2c7d410b9fb11098
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=b7f357e6b1738ac2a707dedbcd6ff39e
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=089a0c24447965fe956efe6d285da401
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: PlaneAngle
+          Id: g=cc7dbf13be8fe0bb061c65d2319c36e2
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=3eabe544fdb8dd4ac32787bb7ec25ff1
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=ee3fa1c2d42484a262ee5deb1ba31a5c
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=c8a7b0a7a8da82bcf5a5abdd349b4554
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: AngularSpeed
+          Id: g=53d7e3288a73ea51458fed76666995d3
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=48609a225ef0895635c7962bb5c2b6d8
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=c7cf6cec8c449f6f1ba5bb55f109f8f2
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=36f10b485cdeb902088bc6188c87641e
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: AngularAcceleration
+          Id: g=14f6607b3e0cad51b44dda6bc81c0d2c
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=c78b06452211dac3d59731c6268f658e
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=bdd70f770f7d02a1c02092e07ceece67
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=66979a3bc5e099fcf3d61687dcc965ee
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: VolumetricFlowRate
+          Id: g=9e63a0f1c6a3bb9a6ac9dd31ef450f6d
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=b77a16eb3c4030ce5ca22abb2091e6c6
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=76d0cf0cf25f10b5d5b918b9a5ff5645
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=d66454071079decd667b3891fbbe0b54
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: MassFlowRate
+          Id: g=8dca95699851bf0219db79ec95d9176a
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+          Children:
+          - Name: UnitId
+            Id: g=217526b1c114b86bfbb827abf0397054
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Id: g=17ce3e98195789fc453cb9217e19bc8e
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Description
+            Id: g=553c998a9f89d3fba4727b60a3ad4463
+            Type: BaseVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Groups
+        Id: g=4f2b7e8980f3c6e08da7a0ea8c3cb008
+        Type: BaseObjectType
+      - Name: Roles
+        Id: g=d8ca97a22a98f31455825778e000ebca
+        Type: BaseObjectType
+      - Name: Rights
+        Id: g=ba10ed1f3726aa4875648de568eb3fc3
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=1;i=146
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=266
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=269
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=272
+        Direction: Forward
+      - Name: LoggedIn
+        Id: g=ca8cf1ea1a67d30f83811e83f59559d5
+        Type: BaseVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
 - Name: WebPresentationEngine1
   Id: g=b7fb7221e5d763262144c59fef81c0ba
   Type: ns=9;PresentationEngine
